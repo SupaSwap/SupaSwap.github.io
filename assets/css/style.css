@@ -6489,3 +6489,54 @@ span.statcounter {
 	display: block;
 	text-align: left;
 }
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Star Field
+--------------------------------------------------------------*/
+
+#star-field {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#star-field .star {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+#star-field .star.far {
+  width: 1px;
+  height: 1px;
+}
+#star-field .star.near {
+  width: 4px;
+  height: 4px;
+}
+#star-field .star.white {
+  background: #fff;
+  box-shadow: 0 0 15px #fff;
+}
+#star-field .star.yellow {
+  background: #BFBB40;
+  box-shadow: 0 0 15px #BFBB40;
+}
+#star-field .star.blue {
+  background: #4444ff;
+  box-shadow: 0 0 15px #4444ff;
+}
+#star-field .star.red {
+  background: #ff4444;
+  box-shadow: 0 0 15px #ff4444;
+}
