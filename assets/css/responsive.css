@@ -97,7 +97,7 @@ header .navbar-nav a {
 	background-size: 40% auto;
 }
 .banner_rouded_bg {
-	border-radius: 0 0 250px;
+	border-radius: 0 0 0px;
 }
 .banner_rounded_shape::before,
 .banner_rounded_shape::after {
