@@ -1352,26 +1352,18 @@ header a:hover,
 	right: 0;
 	top: 0;
 }
-.transparent_effect {
-	height: 100%;
-	opacity: 0.4;
-	position: absolute;
-	top: 0;
-}
+
 .transparent_effect.fixed {
 	position: fixed;
 	z-index:1;
 }
 .banner_rouded_bg {
-	border-radius: 0 0 400px;
+	border-radius: 0 0 0px;
 	height: 100%;
 	left: 0;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
-	-moz-transform: skewY(3deg);
-	-webkit-transform: skewY(3deg);
-	transform: skewY(3deg);
 	transform-origin: right top 0;
 	width: 100%;
 	z-index: -1;
