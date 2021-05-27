@@ -5240,7 +5240,7 @@ button.btn-white:hover {
 .footer_menu li a:hover,
 .footer_link a:hover,
 .footer_social li a:hover {
-	color: #ff69c9;
+	color: #000000;
 }
 .footer_link.list_arrow li {
 	list-style: none;
