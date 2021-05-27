@@ -153,10 +153,279 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section id="home_section" class="section_banner banner_bg1 banner_shape">
-	
-	<div class="banner_rouded_bg blue_light_bg"><canvas id="banner_canvas" class="transparent_effect"></canvas></div>
- 
+<section id="home_section" class="section_banner banner_bg1 banner_shape" style="padding-top: 150px;">
+	<div class="banner_rouded_bg blue_light_bg"></div>
+    <div class="container" style="max-width: 92%;">
+  <div class="home-text text-center row mb-4 mt-4" style="
+    margin-bottom: 40px !important;
+">
+                              <div class="col-12 text-center">
+                                  <div class="mb-2 text-center notranslate"><span style="font-size: 1.6rem;font-weight: 200;color:white;" class="luck-title">TOAD LP FARMING</span></div>
+                              </div>
+                          </div>
+        <div class="row align-items-center" style="margin-left: 0px;margin-right: 0px;max-width: 100%;width: 100%;">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 order-first" style="/* margin-top:-80px */">
+
+<div class="container" style="
+    max-width: none;
+">
+
+
+
+
+
+
+                  <div class="row mb-4 mt-2">
+                    <div class="container col-12 col-xl-4 col-lg-4 col-md-4 mb-4">
+                        <div class="card" style="
+"><span style="
+    margin-left: 20px;
+    margin-top: 10px;
+">Toad-Bnb Balance: <font id="toad-bnb-balance">0</font></span>
+                            <div class="card-body" style="margin-top: 9px;margin-bottom: 9px;">
+                                <h3>Deposit</h3>
+                                <div class="form-group">
+                                    <label for="sellAmount" style="
+    margin-left: 5px;
+">Amount</label>
+                                    <div style="position: relative;">
+                                      <input id="deposit-toad-bnb" type="text" name="" value="1" class="form-control" style="
+                                      padding: 13px 80px 12px 55px;
+                                      background: #fff;
+                                      height: auto;
+                                      border-radius: 15px;
+                                      border: 1px solid #5957cd;
+                                      box-shadow: none;
+                                      font-size: 14px;
+                                      font-weight: normal;
+                                      color: #333;">
+                                      <img src="https://d33wubrfki0l68.cloudfront.net/4e5f36d85fde5cbd2921b558e4a36ba2d8a3278f/93d03/assets/images/logo.png" alt="" style="
+                                      height: 29px;
+                                      position: absolute;
+                                      top: 10px;
+                                      left: 11px;
+                                      ">
+                                      <span style="    font-size: 14px;
+                                      font-weight: normal;
+                                      color: #b9b5b4;
+                                      position: absolute;
+                                      top: 3px;
+                                      right: 10px;
+                                      padding: 5px;">TOAD-BNB</span>
+                                    </div>
+
+                                </div>
+<div class="form-group">
+                                    <label for="sellAmount" style="
+    margin-left: 5px;
+">You will receive</label>
+                                    <div style="position: relative;">
+                                      <input id="receive-lpf" type="text" name="" value="0.9" class="form-control disabled" style="
+                                      padding: 13px 80px 12px 55px;
+                                      background: #fff;
+                                      height: auto;
+                                      border-radius: 15px;
+                                      border: 1px solid #5957cd;
+                                      box-shadow: none;
+                                      font-size: 14px;
+                                      font-weight: normal;
+                                      color: #333;" disabled="">
+                                      <img src="https://d33wubrfki0l68.cloudfront.net/4e5f36d85fde5cbd2921b558e4a36ba2d8a3278f/93d03/assets/images/logo.png" alt="" style="
+                                      height: 29px;
+                                      position: absolute;
+                                      top: 10px;
+                                      left: 11px;
+                                      ">
+                                      <span style="    font-size: 14px;
+                                      font-weight: normal;
+                                      color: #b9b5b4;
+                                      position: absolute;
+                                      top: 3px;
+                                      right: 10px;
+                                      padding: 5px;">LPF</span>
+                                    </div>
+
+                                </div>
+                                <p class="text-center" style="margin-bottom: 5px;">
+                                      <a class="btn btn-default btn-radius animation animated" id="approve_or_buy" onclick="approve();" style="color: white; opacity: 1; margin-top: 7px;">Approve</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="container col-12 col-xl-4 col-lg-4 col-md-4 mb-4" style="margin-right: 0px;margin-left: 0px;">
+
+
+
+
+                          <div id="topStatsContainer" class="row" style="margin-top: -10px;">
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="">
+                                  <span style="color: white;">Daily ROI: <font id="daily_roi">0</font>%</span>
+                              </div>
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="">
+                                  <span style="color: white;">Daily return: <font id="estimaded_earnings">0</font></span>
+                              </div>
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="margin-bottom: 15px;">
+                                  <span style="color: greenyellow;">APY: <font id="apy" s>0</font>%</span>
+                              </div>
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="margin-bottom: 15px;">
+                                  <span style="color: greenyellow;">≈ <font id="estimaded_earnings_usd">0</font></span>
+                              </div>
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="
+">
+                                  <div class="price-top-part">
+                                      <i class="fas fa-wallet" style="
+    color: white;
+    font-size: 2.2rem;
+"></i>
+                                      <h5 class="text-white" style="font-weight: 200;">Staked</h5>
+                                      <p class="text-white" style="font-size: 1.3rem;margin-bottom: 0px !important;"><span class="notranslate"><font id="staked-amount">0.0</font></span></p>
+                                      <p class="text-white" style="margin-top: -5px;font-weight: 400;font-size: 14px;margin-bottom: 15px !important;"><span class="notranslate" style="color: greenyellow;">≈ <font id="staked-amount-usd">0.00</font> BUSD</span></p>
+                                  </div>
+                              </div>
+
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="
+">
+                                  <div class="price-top-part">
+                                      <i class="fa fa-coins" style="
+    color: white;
+    font-size: 2.2rem;
+"></i>
+                                      <h5 class="text-white" style="font-weight: 200;">Divs</h5>
+                                      <p class="text-white" style="font-size: 1.3rem;margin-bottom: 0px !important;"><span class="notranslate" id="dividens">0.0 </span></p>
+                                      <p class="text-white" style="margin-top: -5px;font-weight: 400;font-size: 14px;margin-bottom: 15px !important;"><span class="notranslate" style="color: greenyellow;">≈ <font id="dividens-usd">0.00</font> BUSD</span></p>
+                                  </div>
+                              </div>
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="
+">
+                                  <div class="price-top-part">
+                                      <i class="fa fa-hand-holding-usd" style="
+    color: white;
+    font-size: 2.2rem;
+"></i>
+                                      <h5 class="text-white" style="font-weight: 200;">Deposited</h5>
+                                      <p class="text-white" style="
+    font-size: 1.3rem;
+    margin-bottom: 0px !important;
+"><span class="notranslate" id="total-deposited">0.0 </span></p>
+                                      <p class="text-white" style="
+    margin-bottom: 12px;
+    font-weight: 200;
+    font-size: 13px;
+">TOAD-BNB<span class="notranslate" id="user-vault-usdt"></span></p>
+                                  </div>
+                              </div>
+                              <!--<div class="container col-4 col-xl-4 col-lg-4 col-md-4 text-center">-->
+
+                              <div class="container col-6 col-xl-6 col-lg-6 col-md-6  text-center" style="">
+                                  <div class="price-top-part">
+                                      <i class="far fa-money-bill-alt" style="
+    color: white;
+    font-size: 2.2rem;
+"></i>
+                                      <h5 class="text-white" style="font-weight: 200;">Total Withdrawn</h5>
+                                      <p class="text-white" style="
+    font-size: 1.3rem;
+    margin-bottom: 0px !important;
+"><span class="notranslate" id="withdrawn">0.0 </span></p>
+                                      <p class="text-white" style="
+    margin-bottom: 12px;
+    font-weight: 200;
+    font-size: 13px;
+">TOAD-BNB<span class="notranslate" id="user-vault-usdt"></span></p>
+                                  </div>
+                              </div>
+
+                              <p class="container col-12 white mb-3 text-center" style="
+">
+                                  <a class="btn btn-default btn-radius animation animated" onclick="rollDivs();" style= "margin-left: 5% ;margin-right: 5%; margin-bottom: 10px; width: 140px; color: white; opacity: 1;">REINVEST</a>
+                                  <a class="btn btn-default btn-radius animation animated" onclick="withdrawDivs();" style="margin-left: 5%; margin-right: 5%; margin-bottom: 10px; width: 140px; color: white; opacity: 1;">WITHDRAW</a>
+                              </p>
+                          </div>
+                      </div>
+
+                      <div class="container col-12 col-xl-4 col-lg-4 col-md-4 mb-4">
+                        <div class="card" style="
+">
+                            <span style="
+    margin-left: 20px;
+    margin-top: 10px;
+">LPF Balance: <font id="lpf-balance">0</font></span>
+<div class="card-body" style="margin-top: 9px;margin-bottom: 9px;">
+                                <h3>Remove</h3>
+                                <div class="form-group">
+                                    <label for="sellAmount" style="
+    margin-left: 5px;
+">Amount</label>
+                                    <div style="position: relative;">
+                                      <input id="remove-lpf" type="text" name="" value="1" class="form-control" style="
+                                      padding: 13px 80px 12px 55px;
+                                      background: #fff;
+                                      height: auto;
+                                      border-radius: 15px;
+                                      border: 1px solid #5957cd;
+                                      box-shadow: none;
+                                      font-size: 14px;
+                                      font-weight: normal;
+                                      color: #333;">
+                                      <img src="https://d33wubrfki0l68.cloudfront.net/4e5f36d85fde5cbd2921b558e4a36ba2d8a3278f/93d03/assets/images/logo.png" alt="" style="
+                                      height: 29px;
+                                      position: absolute;
+                                      top: 10px;
+                                      left: 11px;
+                                      ">
+                                      <span style="    font-size: 14px;
+                                      font-weight: normal;
+                                      color: #b9b5b4;
+                                      position: absolute;
+                                      top: 3px;
+                                      right: 10px;
+                                      padding: 5px;">LPF</span>
+                                    </div>
+
+                                </div>
+<div class="form-group">
+                                    <label for="sellAmount" style="
+    margin-left: 5px;
+">You will receive</label>
+                                    <div style="position: relative;">
+                                      <input id="receive-toad-bnb" type="text" name="" value="0.9" class="form-control disabled" style="
+                                      padding: 13px 80px 12px 55px;
+                                      background: #fff;
+                                      height: auto;
+                                      border-radius: 15px;
+                                      border: 1px solid #5957cd;
+                                      box-shadow: none;
+                                      font-size: 14px;
+                                      font-weight: normal;
+                                      color: #333;" disabled="">
+                                      <img src="https://d33wubrfki0l68.cloudfront.net/4e5f36d85fde5cbd2921b558e4a36ba2d8a3278f/93d03/assets/images/logo.png" alt="" style="
+                                      height: 29px;
+                                      position: absolute;
+                                      top: 10px;
+                                      left: 11px;
+                                      ">
+                                      <span style="    font-size: 14px;
+                                      font-weight: normal;
+                                      color: #b9b5b4;
+                                      position: absolute;
+                                      top: 3px;
+                                      right: 10px;
+                                      padding: 5px;">TOAD-BNB</span>
+                                    </div>
+
+                                </div>
+                                <p class="text-center" style="margin-bottom: 5px;">
+                                      <a class="btn btn-default btn-radius animation animated" onclick="removeLPTokens();" style="color: white; opacity: 1; margin-top: 7px;">Remove</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          	</div>
+        </div>
+    </div>
 </section>
 <!-- END SECTION BANNER -->
 
