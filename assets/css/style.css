@@ -364,7 +364,7 @@ button:focus {
 	background-image: -webkit-linear-gradient(left, #193f88 0%,#0e082c 99%);
 	background-image: linear-gradient(to right, #193f88 0%,#0e082c 99%);
 }
-.v_blue,
+.v_blue, 
 .bg_navy_blue {
 	background-color: #052d85;
 }
