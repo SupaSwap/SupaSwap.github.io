@@ -97,7 +97,7 @@ header .navbar-nav a {
 	background-size: 40% auto;
 }
 .banner_rouded_bg {
-	border-radius: 0 0 0px;
+	border-radius: 0 0 250px;
 }
 .banner_rounded_shape::before,
 .banner_rounded_shape::after {
@@ -1072,7 +1072,7 @@ p,
 	margin-top: 50px;	
 }
 .banner_rouded_bg {
-	border-radius: 0 0 0px;
+	border-radius: 0 0 50px;
 }
 .banner_section_s2 {
 	padding-bottom: 30px;
