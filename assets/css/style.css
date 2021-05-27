@@ -1186,6 +1186,8 @@ header a:hover,
 	border:0;
 	height: auto;
 	line-height: normal;
+	margin-bottom: 30px;
+        margin-right: 60px;
 }
 .navbar-expand-lg .navbar-nav.nav_btn a.btn {
 	padding: 10px 25px;
