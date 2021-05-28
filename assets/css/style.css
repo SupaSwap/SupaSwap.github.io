@@ -6691,7 +6691,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .intro-info .btn-get-started, #hero .intro-info .btn-services {
   font-family: "Bungee";
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -6701,6 +6701,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background: #1bb1dc;
   color: #fff;
+  text-decoration: none;
 }
 
 #hero .intro-info .btn-get-started:hover, #hero .intro-info .btn-services:hover {
