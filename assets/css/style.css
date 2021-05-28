@@ -6559,7 +6559,7 @@ span.statcounter {
 body {
   background: #000000;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Bungee Hairline';
 }
 
 a {
@@ -6580,7 +6580,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bungee Hairline';  
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -6721,9 +6721,9 @@ section {
   font-size: 36px;
   color: #1bb1dc;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bungee';
 }
 
 .section-header p {
@@ -6765,8 +6765,8 @@ section {
 
 #about .about-content h2 {
   color: #413e66;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: 'Bungee Hairline';  
+  font-weight: 400;
 }
 
 #about .about-content h3 {
@@ -6936,8 +6936,8 @@ section {
 }
 
 #why-us .counters span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+font-family: 'Bungee';  
+font-weight: 400;
   font-size: 48px;
   display: block;
   color: #1bb1dc;
@@ -6978,7 +6978,7 @@ section {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bungee Hairline';  
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
@@ -7615,7 +7615,7 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bungee';  
   color: #1bb1dc;
   font-weight: 400;
   letter-spacing: 3px;
@@ -7626,7 +7626,7 @@ section {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bungee Hairline';  
   color: #ffffff;
 }
 
