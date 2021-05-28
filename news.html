@@ -786,7 +786,7 @@ async function getPrice() {
   let toadBusdToadBalance = await SeedToadInstance.methods.balanceOf('0x15aff98391f928693f55b70b8f4d787031ad6f74').call()
   toadPrice = toadBusdBUSDBalance/toadBusdToadBalance
   document.getElementById('price').innerHTML= '$'+roundToTwo(toadPrice)
-  document.getElementById('page-title').innerHTML= 'Toad Network - $'+roundToTwo(toadPrice)
+  document.getElementById('page-title').innerHTML= 'ASTROKIT - $'+roundToTwo(toadPrice)
 }
 
 async function getCircSupply() {
