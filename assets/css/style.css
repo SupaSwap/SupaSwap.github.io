@@ -7,6 +7,7 @@ Version      : 1.7
 /*=============================================================
     CSS INDEX
     =============================
+        
         01. GENERAL STYLE (body, link color, section-title, overlay, section-padding etc)
         02. HEADER DESIGN
 	03. BANNER SECTION
@@ -35,7 +36,43 @@ Version      : 1.7
 	26. TOKEN NOTIFICATION POPUP
 	
 *=============================================================*/
-  
+
+
+
+
+/*===================================*
+00. FONT STYLE
+*===================================*/
+  @font-face {
+  font-family: 'Bungee Hairline';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/bungee-hairline-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/bungee-hairline-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/bungee-hairline-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/bungee-hairline-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/bungee-hairline-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/bungee-hairline-regular.svg#BungeeHairline') format('svg'); /* Legacy iOS */
+}	
+	
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/bungee-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/bungee-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/bungee-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/bungee-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/bungee-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/bungee-regular.svg#BungeeHairline') format('svg'); /* Legacy iOS */
+}
+	
+	
+	
+	
+	
 /*===================================*
 01. GENERAL STYLE
 *===================================*/
@@ -58,6 +95,8 @@ h4,
 h5,
 h6 {
 	color: #5957cd;
+	font-family: 'Bungee';
+
 }
 p {
 	color:#7a7a7a;
