@@ -1117,7 +1117,7 @@ header {
 .nav-fixed,
 header.active,
 .spop {
-	background-color: #4241b8;
+	background-color: #000000;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 header.nav-fixed {
