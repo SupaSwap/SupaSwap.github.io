@@ -7,7 +7,7 @@ Version      : 1.7
 /*=============================================================
     CSS INDEX
     =============================
-        
+        00. FONT STYLE
         01. GENERAL STYLE (body, link color, section-title, overlay, section-padding etc)
         02. HEADER DESIGN
 	03. BANNER SECTION
@@ -101,6 +101,8 @@ h6 {
 p {
 	color:#7a7a7a;
 	margin-bottom:30px;
+	font-family: 'Bungee Hairline';
+
 }
 a {
 	color: #5957cd;
