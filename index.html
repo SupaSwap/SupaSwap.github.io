@@ -1058,15 +1058,6 @@ function miOrK(num) {
   else return roundToTwo(num/1e3) + 'K'
 }
 
-async function getPriceWithoutMetaMask() {
-  var rpc = 'https://bsc-dataseed1.binance.org:443'
-  dataseed = new Web3(rpc)
-  await getToadInstance()
-  await getPrice()
-  await getLiquidity()
-  await getCircSupply()
-}
-
 async function getToadInstance() {
   if(toadInstance === undefined) {
       json[1].SeedContractInstance = new dataseed.eth.Contract(json[1].contractABI, json[1].contractAddress)
@@ -1111,35 +1102,8 @@ async function getDividends(num){
   document.getElementById('rewardsVal'+num).innerHTML = '$'+roundToTwo(Number(amount*toadPrice)/1e18)
 }
 
-async function getPrice() {
-  const BUSDinstance = new dataseed.eth.Contract(tokenABI, '0xe9e7cea3dedca5984780bafc599bd69add087d56')
-  const toadBusdInstance = new dataseed.eth.Contract(tokenABI, '0x15aff98391f928693f55b70b8f4d787031ad6f74')
-  let toadBusdBUSDBalance = await BUSDinstance.methods.balanceOf('0x15aff98391f928693f55b70b8f4d787031ad6f74').call()
-  let toadBusdToadBalance = await SeedToadInstance.methods.balanceOf('0x15aff98391f928693f55b70b8f4d787031ad6f74').call()
-  toadPrice = toadBusdBUSDBalance/toadBusdToadBalance
-  document.getElementById('price').innerHTML= '$'+roundToTwo(toadPrice)
-  document.getElementById('page-title').innerHTML= 'Toad Network - $'+roundToTwo(toadPrice)
-}
 
-async function getCircSupply() {
-    let bal1 = await json[1].SeedContractInstance.methods.dividendPool().call()
-    bal1 = bal1/1e18
-    let bal2 = await json[2].SeedContractInstance.methods.dividendPool().call()
-    bal2 = bal2/1e18
-    let bal3 = await json[3].SeedContractInstance.methods.dividendPool().call()
-    bal3 = bal3/1e18
-    const circSupply = 195000-bal1-bal2-bal3-23000
-    document.getElementById('circ-supply').innerHTML = miOrK(circSupply)
-    document.getElementById('mcap').innerHTML = '' + miOrK(toadPrice*circSupply)
-}
 
-async function getLiquidity() {
-    let bnbLiq = await SeedToadInstance.methods.balanceOf('0x20A3DC9C2ac748e3684015209735b7CDd6CA6Ba5').call()
-    bnbLiq = bnbLiq*2/1e18*toadPrice
-    let busdLiq = await SeedToadInstance.methods.balanceOf('0x15aff98391f928693F55b70b8F4D787031Ad6f74').call()
-    busdLiq = busdLiq*2/1e18*toadPrice
-    document.getElementById('liquidity').innerHTML = ''+miOrK((Number(bnbLiq)+Number(busdLiq)))
-}
 
 async function getROI1(num){
   const instance = new web3.eth.Contract(tokenABI, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c')
@@ -1188,31 +1152,6 @@ async function getROI2(num){
   }
 }
 
-async function getROI3(num){
-  const instance = new web3.eth.Contract(tokenABI, '0xe9e7cea3dedca5984780bafc599bd69add087d56')
-  let contractBalance = await instance.methods.balanceOf('0x15aff98391f928693F55b70b8F4D787031Ad6f74').call()
-  let totalSupply = await json[num].tokenInstance.methods.totalSupply().call()
-  let toadBalance = await json[2].tokenInstance.methods.balanceOf('0x15aff98391f928693F55b70b8F4D787031Ad6f74').call()
-  let toadPriceBnb = contractBalance/toadBalance
-  let lpPrice = contractBalance*2/totalSupply
-  document.getElementById('lpVal'+num).innerHTML = '$' + roundToTwo(lpPrice)
-  getStakeVal(3, lpPrice)
-  let supply = await json[num].contractInstance.methods.totalSupply().call()
-  let pool = await json[num].contractInstance.methods.dividendPool().call()
-  let roi = pool*toadPriceBnb/(supply*100*lpPrice)*100
-
-  document.getElementById('roi'+num).innerHTML = roundToTwo(roi) + '%'
-
-  let initial = 100
-  let apy = 0
-  for(let i = 0; i<365; i++) {
-    initial = initial + initial*roi/100
-    roi = roi*0.99
-    if(i == 364) {
-      document.getElementById('apy3').innerHTML = round(initial-100) + '%'
-    }
-  }
-}
 
 async function getPoolInfo(num){
   let amount = await json[num].contractInstance.methods.dividendPool().call()
