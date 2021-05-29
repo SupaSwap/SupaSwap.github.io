@@ -445,6 +445,7 @@ header.fixed-top {
 	border: 0 none;
 	font-size: 24px;
 	background-image: linear-gradient(to right, #1bb1dc 0%,#1bb1dc 99%);
+	margin-bottom: 5px;
 }
 .navbar-nav {
 	-webkit-animation-name: none;
