@@ -108,7 +108,7 @@ p {
 
 }
 a {
-	color: #5957cd;
+	color: #1bb1dc;
 	text-decoration: none;
 	-webkit-transition: all 0.5s ease;
 	transition: all .5s ease;
@@ -6560,12 +6560,6 @@ body {
   background: #000000;
   color: #ffffff;
   font-family: 'Bungee Hairline';
-}
-
-a {
-  color: #1bb1dc;
-  text-decoration: none;
-  transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
