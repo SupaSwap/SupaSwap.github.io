@@ -4147,8 +4147,8 @@ header a:hover,
     transform: translateY(-50%);
 }
 .faq_question .card-header a {
-	background-color: #fff;
-    border: 1px solid #5957cd;
+	background-color: #000;
+    border: 1px solid #1bb0db;
     border-radius: 5px 5px 0 0;
     display: block;
 	font-size: 18px;
