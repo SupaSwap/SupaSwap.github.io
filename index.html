@@ -1093,36 +1093,6 @@ const accountInterval1 = setInterval(async function() {
       toadInstance = new web3.eth.Contract(tokenABI, toadAddress)
     }
   }
-}, 2000) //executed every 3000ms(3 seconds)
-setInterval(async function(){
-  await getPrice()
-  await getCircSupply()
-  await getLiquidity()
-  setTimeout(async function(){
-    await getStakedAmount(1)
-    await getDividends(1)
-    await getBalance(1)
-    await checkAllowance(1)
-    await getROI1(1)
-    await getPoolInfo(1)
-  },1500)
-  setTimeout(async function(){
-    await getStakedAmount(2)
-    await getDividends(2)
-    await getBalance(2)
-    await checkAllowance(2)
-    await getROI2(2)
-    await getPoolInfo(2)
-  },3000)
-  setTimeout(async function(){
-    await getStakedAmount(3)
-    await getDividends(3)
-    await getBalance(3)
-    await checkAllowance(3)
-    await getROI3(3)
-    await getPoolInfo(3)
-  },5000)
-},5000)
 
 async function getStakedAmount(num){
   let amount = await json[num].contractInstance.methods.balanceOf(myaddress).call()
